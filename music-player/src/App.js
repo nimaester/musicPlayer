@@ -1,9 +1,9 @@
 import React from 'react';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-    <h1>Music Player</h1>
+      <h1>Music Player</h1>
     </div>
   );
 }
