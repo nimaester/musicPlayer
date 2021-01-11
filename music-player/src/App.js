@@ -7,11 +7,12 @@ import songList from './SongLists';
 const App = () => {
 
   const [songs, setSongs] = useState(songList());
+  const [currentSong, setCurrentSong] = useState(songs[0]);
 
   return (
     <div className="App">
-      <Song />
-      <MusicPlayer />
+      <Song currentSong={currentSong} />
+      <MusicPlayer currentSong={currentSong, setCurrentSong} />
     </div>
   );
 }
