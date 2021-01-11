@@ -4,7 +4,13 @@ const MusicPlayer = ({setPlaying, currentSong, setCurrentSong, isPlaying}) => {
 
   const audioRef = useRef(null);
   const playSong = () => {
-    audioRef.current.play();
+    if (isPlaying) {
+      setPlaying(false);
+      audioRef.current.pause();
+    } else {
+      setPlaying(true);
+      audioRef.current.play();
+    }
   }
 
   return (
