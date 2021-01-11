@@ -24,6 +24,10 @@ const MusicPlayer = ({setPlaying, currentSong, setCurrentSong, isPlaying}) => {
 
   }
 
+  const setSong = () => {
+
+  }
+
   const playSong = () => {
     if (isPlaying) {
       setPlaying(false);
@@ -43,13 +47,15 @@ const MusicPlayer = ({setPlaying, currentSong, setCurrentSong, isPlaying}) => {
       </div>
       <div className="player-buttons">
         <i className="fas fa-angle-left previous" />
-        <i onClick={playSong} className="fas fa-play play"/>
+        {isPlaying ? <i onClick={playSong} className="fas fa-pause" /> :
+        <i onClick={playSong} className="fas fa-play play"/>}
         <i className="fas fa-angle-right next" />
       </div>
       <audio
         onTimeUpdate={updateTrack}
         ref={audioRef}
         src={currentSong.audio}
+        //updates the current song duration on load
         onLoadedMetadata={updateTrack}
 
       />
