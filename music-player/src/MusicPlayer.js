@@ -2,7 +2,6 @@ import React, { useRef, useState } from 'react';
 
 const MusicPlayer = ({setPlaying, currentSong, setCurrentSong, isPlaying}) => {
 
-
   const formatTrackTime = (time) => {
     return (
       Math.floor(time / 60) + ":" + ("0" + Math.floor(time % 60)).slice(-2)
