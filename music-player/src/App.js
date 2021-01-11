@@ -12,7 +12,9 @@ const App = () => {
 
   return (
     <div className="App">
-      <Song currentSong={currentSong} />
+      <Song
+        currentSong={currentSong}
+      />
       <MusicPlayer
         isPlaying={isPlaying}
         setPlaying={setPlaying}

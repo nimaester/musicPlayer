@@ -23,10 +23,6 @@ const MusicPlayer = ({setPlaying, currentSong, setCurrentSong, isPlaying}) => {
 
   }
 
-  const setSong = () => {
-
-  }
-
   const playSong = () => {
     if (isPlaying) {
       setPlaying(false);
