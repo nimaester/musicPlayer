@@ -1,10 +1,10 @@
 import React, { useRef } from 'react';
 
-const MusicPlayer = ({currentSong, setCurrentSong}) => {
+const MusicPlayer = ({setPlaying, currentSong, setCurrentSong, isPlaying}) => {
 
   const audioRef = useRef(null);
   const playSong = () => {
-
+    audioRef.current.play();
   }
 
   return (
@@ -19,7 +19,7 @@ const MusicPlayer = ({currentSong, setCurrentSong}) => {
         <i onClick={playSong} className="fas fa-play play"/>
         <i className="fas fa-angle-right next" />
       </div>
-      <audio src={currentSong.audio} />
+      <audio ref={audioRef} src={currentSong.audio}></audio>
 
     </div>
   );

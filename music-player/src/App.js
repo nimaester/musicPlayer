@@ -8,11 +8,17 @@ const App = () => {
 
   const [songs, setSongs] = useState(songList());
   const [currentSong, setCurrentSong] = useState(songs[0]);
+  const [isPlaying, setPlaying] = useState(false);
 
   return (
     <div className="App">
       <Song currentSong={currentSong} />
-      <MusicPlayer currentSong={currentSong, setCurrentSong} />
+      <MusicPlayer
+        isPlaying={isPlaying}
+        setPlaying={setPlaying}
+        currentSong={currentSong}
+        setCurrentSong={setCurrentSong}
+      />
     </div>
   );
 }
