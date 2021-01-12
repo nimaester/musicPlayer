@@ -1,9 +1,16 @@
 import React from 'react';
 
-const TrackSong = ({track}) => {
+const TrackSong = ({id, track, songs, setCurrentSong}) => {
+
+  const selectSong = (event) => {
+    const selectedSong = songs.filter((song) => (
+      song.id === id
+    ))
+    setCurrentSong(selectedSong[0])
+  }
 
   return (
-    <div className="track-song">
+    <div onClick={selectSong} className="track-song">
       <img src={track.image_cover} alt="" />
       <div className="song-desc">
         <h2>{track.title}</h2>

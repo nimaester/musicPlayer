@@ -22,7 +22,7 @@ const App = () => {
         currentSong={currentSong}
         setCurrentSong={setCurrentSong}
       />
-      <TrackList songs={songs}/>
+      <TrackList songs={songs} setCurrentSong={setCurrentSong}/>
     </div>
   );
 }

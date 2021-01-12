@@ -54,7 +54,7 @@ const MusicPlayer = ({
         <input
           onChange={changeTrack}
           min={0}
-          max={songInfo.duration}
+          max={songInfo.duration || 0}
           value={songInfo.current}
           type='range'
         />

@@ -12,6 +12,12 @@
   border: transparent;
 }
 
+h2, h4 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: rgb(100, 100, 100);
+}
+
 .track-list {
   position: fixed;
   top: 0;
@@ -32,7 +38,7 @@
   }
   cursor: pointer;
   &:hover {
-    background: rgb(193, 170, 255);
+    background: rgb(200, 255, 255);
   }
 }
 
