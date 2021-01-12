@@ -63,7 +63,7 @@ const MusicPlayer = ({
       <div className='player-buttons'>
         <i className='fas fa-angle-left previous' />
         {isPlaying ? (
-          <i onClick={playSong} className='fas fa-pause' />
+          <i onClick={playSong} className='fas fa-pause pause' />
         ) : (
           <i onClick={playSong} className='fas fa-play play' />
         )}

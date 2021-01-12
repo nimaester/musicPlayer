@@ -1,0 +1,25 @@
+.track-list {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20rem;
+  height: 100%;
+  background-color: lightgrey;
+  box-shadow: 2px 2px 50px gray;
+  overflow: scroll;
+}
+
+.track-songs {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1rem 2rem 1rem 2rem;
+  img {
+    width: 60%;
+  }
+}
+
+.title {
+  padding: 1rem 2rem 1rem 2rem;
+}

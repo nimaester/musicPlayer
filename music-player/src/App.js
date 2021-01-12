@@ -3,6 +3,7 @@ import MusicPlayer from './MusicPlayer';
 import Song from './Song';
 import './styles/app.scss';
 import songList from './SongLists';
+import TrackList from './TrackList';
 
 const App = () => {
 
@@ -21,6 +22,7 @@ const App = () => {
         currentSong={currentSong}
         setCurrentSong={setCurrentSong}
       />
+      <TrackList songs={songs}/>
     </div>
   );
 }
