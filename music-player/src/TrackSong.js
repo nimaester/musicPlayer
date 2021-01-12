@@ -2,8 +2,7 @@ import React from "react";
 
 const TrackSong = ({ id, track, songs, setCurrentSong, setPlaying }) => {
   const selectSong = (event) => {
-    const selectedSong = songs.filter((song) => song.id === id);
-    setCurrentSong(selectedSong[0]);
+    setCurrentSong(track);
     setPlaying(false);
   };
 
