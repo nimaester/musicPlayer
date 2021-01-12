@@ -37,6 +37,78 @@ const songList = () => {
       active: false,
       color: ["#BD7A6C", "#2A5396"],
       audio: "https://mp3.chillhop.com/serve.php/?mp3=11770"
+    },
+    {
+      title: "Far From Home",
+      artist: "Toonorth",
+      image_cover: "https://chillhop.com/wp-content/uploads/2020/07/ad7fc4dda66ba986466fd2b1c416b0b12411ee28-300x300.jpg",
+      id: uuidv4(),
+      active: true,
+      color: ["#5B8685", "#2C293C"],
+      audio: "https://mp3.chillhop.com/serve.php/?mp3=8127"
+    },
+    {
+      title: "Far From Home",
+      artist: "Toonorth",
+      image_cover: "https://chillhop.com/wp-content/uploads/2020/07/ad7fc4dda66ba986466fd2b1c416b0b12411ee28-300x300.jpg",
+      id: uuidv4(),
+      active: true,
+      color: ["#5B8685", "#2C293C"],
+      audio: "https://mp3.chillhop.com/serve.php/?mp3=8127"
+    },
+    {
+      title: "Far From Home",
+      artist: "Toonorth",
+      image_cover: "https://chillhop.com/wp-content/uploads/2020/07/ad7fc4dda66ba986466fd2b1c416b0b12411ee28-300x300.jpg",
+      id: uuidv4(),
+      active: true,
+      color: ["#5B8685", "#2C293C"],
+      audio: "https://mp3.chillhop.com/serve.php/?mp3=8127"
+    },
+    {
+      title: "Far From Home",
+      artist: "Toonorth",
+      image_cover: "https://chillhop.com/wp-content/uploads/2020/07/ad7fc4dda66ba986466fd2b1c416b0b12411ee28-300x300.jpg",
+      id: uuidv4(),
+      active: true,
+      color: ["#5B8685", "#2C293C"],
+      audio: "https://mp3.chillhop.com/serve.php/?mp3=8127"
+    },
+    {
+      title: "Far From Home",
+      artist: "Toonorth",
+      image_cover: "https://chillhop.com/wp-content/uploads/2020/07/ad7fc4dda66ba986466fd2b1c416b0b12411ee28-300x300.jpg",
+      id: uuidv4(),
+      active: true,
+      color: ["#5B8685", "#2C293C"],
+      audio: "https://mp3.chillhop.com/serve.php/?mp3=8127"
+    },
+    {
+      title: "Far From Home",
+      artist: "Toonorth",
+      image_cover: "https://chillhop.com/wp-content/uploads/2020/07/ad7fc4dda66ba986466fd2b1c416b0b12411ee28-300x300.jpg",
+      id: uuidv4(),
+      active: true,
+      color: ["#5B8685", "#2C293C"],
+      audio: "https://mp3.chillhop.com/serve.php/?mp3=8127"
+    },
+    {
+      title: "Far From Home",
+      artist: "Toonorth",
+      image_cover: "https://chillhop.com/wp-content/uploads/2020/07/ad7fc4dda66ba986466fd2b1c416b0b12411ee28-300x300.jpg",
+      id: uuidv4(),
+      active: true,
+      color: ["#5B8685", "#2C293C"],
+      audio: "https://mp3.chillhop.com/serve.php/?mp3=8127"
+    },
+    {
+      title: "Far From Home",
+      artist: "Toonorth",
+      image_cover: "https://chillhop.com/wp-content/uploads/2020/07/ad7fc4dda66ba986466fd2b1c416b0b12411ee28-300x300.jpg",
+      id: uuidv4(),
+      active: true,
+      color: ["#5B8685", "#2C293C"],
+      audio: "https://mp3.chillhop.com/serve.php/?mp3=8127"
     }
 
 
