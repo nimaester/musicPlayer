@@ -1,6 +1,6 @@
 import React from "react";
 
-const TrackSong = ({ id, track, songs, setCurrentSong, setPlaying }) => {
+const TrackSong = ({ track, songs, setCurrentSong, setPlaying }) => {
   const selectSong = (event) => {
     setCurrentSong(track);
     setPlaying(false);

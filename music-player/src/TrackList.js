@@ -10,7 +10,6 @@ const TrackList = ({ songs, setCurrentSong, setPlaying }) => {
           <TrackSong
             key={track.id}
             track={track}
-            id={track.id}
             songs={songs}
             setCurrentSong={setCurrentSong}
             setPlaying={setPlaying}
