@@ -6,7 +6,7 @@ import songList from "./SongLists";
 import TrackList from "./TrackList";
 
 const App = () => {
-  const [songs, setSong] = useState(songList());
+  const [songs, setSongs] = useState(songList());
   const [currentSong, setCurrentSong] = useState(songs[0]);
   const [isPlaying, setPlaying] = useState(false);
 
