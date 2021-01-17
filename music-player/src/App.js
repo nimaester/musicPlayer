@@ -9,8 +9,21 @@ const App = () => {
   const [songs, setSongs] = useState(songList());
   const [currentSong, setCurrentSong] = useState(songs[0]);
   const [isPlaying, setPlaying] = useState(false);
+  const [songInfo, setSongInfo] = useState({
+    current: 0,
+    duration: 0,
+  });
 
   const audioRef = useRef(null);
+  const updateTrack = (event) => {
+    const current = event.target.currentTime;
+    const duration = event.target.duration;
+    setSongInfo({
+      ...songInfo,
+      current,
+      duration,
+    });
+  };
 
   return (
     <div className='App'>
@@ -20,6 +33,9 @@ const App = () => {
         setPlaying={setPlaying}
         currentSong={currentSong}
         setCurrentSong={setCurrentSong}
+        audioRef={audioRef}
+        songInfo={songInfo}
+        setSongInfo={setSongInfo}
       />
       <TrackList
         setPlaying={setPlaying}

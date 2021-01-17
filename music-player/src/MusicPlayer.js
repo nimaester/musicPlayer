@@ -5,26 +5,14 @@ const MusicPlayer = ({
   currentSong,
   setCurrentSong,
   isPlaying,
+  audioRef,
+  setSongInfo,
+  songInfo
 }) => {
   const formatTrackTime = (time) => {
     return (
       Math.floor(time / 60) + ":" + ("0" + Math.floor(time % 60)).slice(-2)
     );
-  };
-
-  const [songInfo, setSongInfo] = useState({
-    current: 0,
-    duration: 0,
-  });
-
-  const updateTrack = (event) => {
-    const current = event.target.currentTime;
-    const duration = event.target.duration;
-    setSongInfo({
-      ...songInfo,
-      current,
-      duration,
-    });
   };
 
   const changeTrack = (event) => {
@@ -67,13 +55,6 @@ const MusicPlayer = ({
         )}
         <i className='fas fa-angle-right next' />
       </div>
-      <audio
-        onTimeUpdate={updateTrack}
-        ref={audioRef}
-        src={currentSong.audio}
-        //updates the current song duration on load
-        onLoadedMetadata={updateTrack}
-      />
     </div>
   );
 };
