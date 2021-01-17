@@ -11,19 +11,7 @@ const TrackSong = ({
 }) => {
   const selectSong = (event) => {
     setCurrentSong(track);
-    const newTracks = songs.map((song) => {
-      if (song.id === track.id) {
-        return {
-          ...song,
-          active: true,
-        };
-      } else {
-        return {
-          ...song,
-          active: false,
-        };
-      }
-    });
+    const newTracks = songs.map((song) => (song.id === track.id ? song.active= true : song.active= false));
     if (isPlaying) {
       const autoPlay = audioRef.current.play();
       autoPlay !== undefined
