@@ -11,7 +11,9 @@ const TrackSong = ({
 }) => {
   const selectSong = (event) => {
     setCurrentSong(track);
-    const newTracks = songs.map((song) => (song.id === track.id ? song.active= true : song.active= false));
+    const newTracks = songs.map((song) =>
+      song.id === track.id ? (song.active = true) : (song.active = false)
+    );
     if (isPlaying) {
       const autoPlay = audioRef.current.play();
       autoPlay !== undefined
@@ -23,7 +25,10 @@ const TrackSong = ({
   };
 
   return (
-    <div onClick={selectSong} className={`track-song ${track.active ? 'selected' : ""}`}>
+    <div
+      onClick={selectSong}
+      className={`track-song ${track.active ? "selected" : ""}`}
+    >
       <img src={track.image_cover} alt='' />
       <div className='song-desc'>
         <h2>{track.title}</h2>

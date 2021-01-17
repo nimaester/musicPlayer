@@ -7,9 +7,8 @@ const MusicPlayer = ({
   isPlaying,
   audioRef,
   setSongInfo,
-  songInfo
+  songInfo,
 }) => {
-
   const formatTrackTime = (time) => {
     return (
       Math.floor(time / 60) + ":" + ("0" + Math.floor(time % 60)).slice(-2)
@@ -45,7 +44,7 @@ const MusicPlayer = ({
           value={songInfo.current}
           type='range'
         />
-        <p>{formatTrackTime(songInfo.duration || '')}</p>
+        <p>{formatTrackTime(songInfo.duration || "")}</p>
       </div>
       <div className='player-buttons'>
         <i className='fas fa-angle-left previous' />

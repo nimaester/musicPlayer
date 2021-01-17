@@ -1,9 +1,17 @@
 import React from "react";
 import TrackSong from "./TrackSong";
 
-const TrackList = ({ showTracks, setSongs, isPlaying, songs, setCurrentSong, setPlaying, audioRef }) => {
+const TrackList = ({
+  showTracks,
+  setSongs,
+  isPlaying,
+  songs,
+  setCurrentSong,
+  setPlaying,
+  audioRef,
+}) => {
   return (
-    <div className={`track-list ${showTracks ? 'active' : ""}`}>
+    <div className={`track-list ${showTracks ? "active" : ""}`}>
       <h2 className='title'>Track List</h2>
       <div className='track-songs'>
         {songs.map((track, index) => (

@@ -29,10 +29,7 @@ const App = () => {
 
   return (
     <div className='App'>
-      <Nav
-        showTracks={showTracks}
-        setShowTracks={setShowTracks}
-      />
+      <Nav showTracks={showTracks} setShowTracks={setShowTracks} />
       <Song currentSong={currentSong} />
       <MusicPlayer
         isPlaying={isPlaying}
