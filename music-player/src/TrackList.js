@@ -1,7 +1,7 @@
 import React from "react";
 import TrackSong from "./TrackSong";
 
-const TrackList = ({ songs, setCurrentSong, setPlaying }) => {
+const TrackList = ({ songs, setCurrentSong, setPlaying, audioRef }) => {
   return (
     <div className='track-list'>
       <h2 className='title'>Track List</h2>

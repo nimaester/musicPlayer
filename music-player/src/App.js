@@ -38,6 +38,7 @@ const App = () => {
         setSongInfo={setSongInfo}
       />
       <TrackList
+        audioRef={audioRef}
         setPlaying={setPlaying}
         songs={songs}
         setCurrentSong={setCurrentSong}
