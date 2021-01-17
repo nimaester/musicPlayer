@@ -26,6 +26,13 @@ const App = () => {
         songs={songs}
         setCurrentSong={setCurrentSong}
       />
+      <audio
+        onTimeUpdate={updateTrack}
+        ref={audioRef}
+        src={currentSong.audio}
+        //updates the current song duration on load
+        onLoadedMetadata={updateTrack}
+      />
     </div>
   );
 };
