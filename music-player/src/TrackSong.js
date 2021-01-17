@@ -6,11 +6,11 @@ const TrackSong = ({ isPlaying, track, songs, setCurrentSong, setPlaying, audioR
 
     if (isPlaying) {
       const autoPlay = audioRef.current.play();
-      if (autoPlay !== undefined) {
-        autoPlay.then((audio) => {
-          audioRef.current.play()
-        })
-      }
+      autoPlay !== undefined ?
+      autoPlay.then((audio) => {
+        audioRef.current.play()
+      }) : null
+
     }
 
   };
