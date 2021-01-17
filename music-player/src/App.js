@@ -2,12 +2,12 @@ import React, { useState, useRef } from "react";
 import MusicPlayer from "./MusicPlayer";
 import Song from "./Song";
 import "./styles/app.scss";
-import songList from "./SongLists";
+import Tracks from "./Tracks";
 import TrackList from "./TrackList";
 import Nav from "./Nav";
 
 const App = () => {
-  const [songs, setSongs] = useState(songList());
+  const [songs, setSongs] = useState(Tracks());
   const [currentSong, setCurrentSong] = useState(songs[0]);
   const [isPlaying, setPlaying] = useState(false);
   const [songInfo, setSongInfo] = useState({
