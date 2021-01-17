@@ -17,8 +17,6 @@ const MusicPlayer = ({
     duration: 0,
   });
 
-  const audioRef = useRef(null);
-
   const updateTrack = (event) => {
     const current = event.target.currentTime;
     const duration = event.target.duration;
