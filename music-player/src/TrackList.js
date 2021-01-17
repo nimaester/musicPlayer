@@ -1,7 +1,7 @@
 import React from "react";
 import TrackSong from "./TrackSong";
 
-const TrackList = ({ isPlaying, songs, setCurrentSong, setPlaying, audioRef }) => {
+const TrackList = ({ setSongs, isPlaying, songs, setCurrentSong, setPlaying, audioRef }) => {
   return (
     <div className='track-list'>
       <h2 className='title'>Track List</h2>
@@ -15,6 +15,7 @@ const TrackList = ({ isPlaying, songs, setCurrentSong, setPlaying, audioRef }) =
             setCurrentSong={setCurrentSong}
             setPlaying={setPlaying}
             isPlaying={isPlaying}
+            setSongs={setSongs}
           />
         ))}
       </div>
