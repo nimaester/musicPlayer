@@ -27,6 +27,10 @@ h2, h4 {
   background-color: white;
   box-shadow: 2px 2px 50px gray;
   overflow: scroll;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+  opacity: 0;
+
 }
 
 .track-song  {
@@ -60,3 +64,7 @@ h2, h4 {
   background: rgb(147, 155, 255);
 }
 
+.active {
+  transform: translateX(0);
+  opacity: 1;
+}

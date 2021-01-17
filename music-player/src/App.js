@@ -4,6 +4,7 @@ import Song from "./Song";
 import "./styles/app.scss";
 import songList from "./SongLists";
 import TrackList from "./TrackList";
+import Nav from "./Nav";
 
 const App = () => {
   const [songs, setSongs] = useState(songList());
@@ -13,6 +14,7 @@ const App = () => {
     current: 0,
     duration: 0,
   });
+  const [showTracks, setShowTracks] = useState(false);
 
   const audioRef = useRef(null);
   const updateTrack = (event) => {
@@ -27,6 +29,10 @@ const App = () => {
 
   return (
     <div className='App'>
+      <Nav
+        showTracks={showTracks}
+        setShowTracks={setShowTracks}
+      />
       <Song currentSong={currentSong} />
       <MusicPlayer
         isPlaying={isPlaying}
@@ -44,6 +50,7 @@ const App = () => {
         songs={songs}
         setCurrentSong={setCurrentSong}
         setSongs={setSongs}
+        showTracks={showTracks}
       />
       <audio
         onTimeUpdate={updateTrack}
