@@ -45,7 +45,7 @@ const MusicPlayer = ({
           value={songInfo.current}
           type='range'
         />
-        <p>{formatTrackTime(songInfo.duration)}</p>
+        <p>{formatTrackTime(songInfo.duration || '')}</p>
       </div>
       <div className='player-buttons'>
         <i className='fas fa-angle-left previous' />
