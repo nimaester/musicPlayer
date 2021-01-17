@@ -10,7 +10,6 @@ const TrackSong = ({ isPlaying, track, songs, setCurrentSong, setPlaying, audioR
       autoPlay.then((audio) => {
         audioRef.current.play()
       }) : null
-
     }
 
   };
