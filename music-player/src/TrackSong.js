@@ -1,17 +1,17 @@
 import React from "react";
 
 const TrackSong = ({
-  setSongs,
+  setTracks,
   isPlaying,
   track,
-  songs,
-  setCurrentSong,
+  tracks,
+  setCurrentTrack,
   setPlaying,
   audioRef,
 }) => {
   const selectSong = (event) => {
-    setCurrentSong(track);
-    const newTracks = songs.map((song) =>
+    setCurrentTrack(track);
+    const newTracks = tracks.map((song) =>
       song.id === track.id ? (song.active = true) : (song.active = false)
     );
     if (isPlaying) {

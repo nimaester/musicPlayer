@@ -7,8 +7,8 @@ import TrackList from "./TrackList";
 import Nav from "./Nav";
 
 const App = () => {
-  const [songs, setSongs] = useState(Tracks());
-  const [currentSong, setCurrentSong] = useState(songs[0]);
+  const [tracks, setTracks] = useState(Tracks());
+  const [currentTrack, setCurrentTrack] = useState(tracks[0]);
   const [isPlaying, setPlaying] = useState(false);
   const [songInfo, setSongInfo] = useState({
     current: 0,
@@ -30,12 +30,13 @@ const App = () => {
   return (
     <div className='App'>
       <Nav showTracks={showTracks} setShowTracks={setShowTracks} />
-      <Song currentSong={currentSong} />
+      <Song currentTrack={currentTrack} />
       <MusicPlayer
+        song
         isPlaying={isPlaying}
         setPlaying={setPlaying}
-        currentSong={currentSong}
-        setCurrentSong={setCurrentSong}
+        currentTrack={currentTrack}
+        setCurrentTrack={setCurrentTrack}
         audioRef={audioRef}
         songInfo={songInfo}
         setSongInfo={setSongInfo}
@@ -44,15 +45,15 @@ const App = () => {
         audioRef={audioRef}
         isPlaying={isPlaying}
         setPlaying={setPlaying}
-        songs={songs}
-        setCurrentSong={setCurrentSong}
-        setSongs={setSongs}
+        tracks={tracks}
+        setCurrentTrack={setCurrentTrack}
+        setTracks={setTracks}
         showTracks={showTracks}
       />
       <audio
         onTimeUpdate={updateTrack}
         ref={audioRef}
-        src={currentSong.audio}
+        src={currentTrack.audio}
         //updates the current song duration on load
         onLoadedMetadata={updateTrack}
       />

@@ -2,8 +2,8 @@ import React, { useState } from "react";
 
 const MusicPlayer = ({
   setPlaying,
-  currentSong,
-  setCurrentSong,
+  currentTrack,
+  setCurrentTrack,
   isPlaying,
   audioRef,
   setSongInfo,
@@ -33,6 +33,15 @@ const MusicPlayer = ({
     }
   };
 
+  const trackHandler = (type) => {
+
+    if (type === "next" ) {
+
+    } else {
+
+    }
+  }
+
   return (
     <div className='player'>
       <div className='controls'>
@@ -47,13 +56,13 @@ const MusicPlayer = ({
         <p>{formatTrackTime(songInfo.duration || "")}</p>
       </div>
       <div className='player-buttons'>
-        <i className='fas fa-angle-left previous' />
+        <i onClick={() => trackHandler(previous)} className='fas fa-angle-left previous' />
         {isPlaying ? (
           <i onClick={playSong} className='fas fa-pause pause' />
         ) : (
           <i onClick={playSong} className='fas fa-play play' />
         )}
-        <i className='fas fa-angle-right next' />
+        <i onClick={() => trackHandler(previous)} className='fas fa-angle-right next' />
       </div>
     </div>
   );

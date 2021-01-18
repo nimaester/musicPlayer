@@ -3,27 +3,27 @@ import TrackSong from "./TrackSong";
 
 const TrackList = ({
   showTracks,
-  setSongs,
+  setTracks,
   isPlaying,
-  songs,
-  setCurrentSong,
+  tracks,
+  setCurrentTrack,
   setPlaying,
   audioRef,
 }) => {
   return (
     <div className={`track-list ${showTracks ? "active" : ""}`}>
       <h2 className='title'>Track List</h2>
-      <div className='track-songs'>
-        {songs.map((track, index) => (
+      <div className='track-tracks'>
+        {tracks.map((track, index) => (
           <TrackSong
             audioRef={audioRef}
             key={track.id}
             track={track}
-            songs={songs}
-            setCurrentSong={setCurrentSong}
+            tracks={tracks}
+            setCurrentTrack={setCurrentTrack}
             setPlaying={setPlaying}
             isPlaying={isPlaying}
-            setSongs={setSongs}
+            setTracks={setTracks}
           />
         ))}
       </div>
