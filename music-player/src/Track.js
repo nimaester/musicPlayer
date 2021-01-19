@@ -1,6 +1,6 @@
 import React from "react";
 
-const TrackSong = ({
+const Track = ({
   setTracks,
   isPlaying,
   track,
@@ -38,4 +38,4 @@ const TrackSong = ({
   );
 };
 
-export default TrackSong;
+export default Track;

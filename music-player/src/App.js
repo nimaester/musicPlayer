@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
-import MusicPlayer from "./MusicPlayer";
-import Song from "./Song";
+import TrackPlayer from "./TrackPlayer";
+import TrackInfo from "./TrackInfo";
 import "./styles/app.scss";
 import Tracks from "./Tracks";
 import TrackList from "./TrackList";
@@ -13,26 +13,32 @@ const App = () => {
   const [songInfo, setSongInfo] = useState({
     current: 0,
     duration: 0,
+    sliderPercent: 0,
   });
   const [showTracks, setShowTracks] = useState(false);
 
   const audioRef = useRef(null);
+
   const updateTrack = (event) => {
     const current = event.target.currentTime;
     const duration = event.target.duration;
+    const currentRounded = Math.round(current);
+    const durationRounded = Math.round(duration);
+    const sliderAmount = Math.round((currentRounded / durationRounded) * 100);
     setSongInfo({
       ...songInfo,
       current,
       duration,
+      sliderPercent: sliderAmount,
     });
   };
 
   return (
     <div className='App'>
       <Nav showTracks={showTracks} setShowTracks={setShowTracks} />
-      <Song currentTrack={currentTrack} />
-      <MusicPlayer
-        song
+      <TrackInfo currentTrack={currentTrack} />
+      <TrackPlayer
+        tracks={tracks}
         isPlaying={isPlaying}
         setPlaying={setPlaying}
         currentTrack={currentTrack}

@@ -1,5 +1,5 @@
 import React from "react";
-import TrackSong from "./TrackSong";
+import Track from "./Track";
 
 const TrackList = ({
   showTracks,
@@ -15,7 +15,7 @@ const TrackList = ({
       <h2 className='title'>Track List</h2>
       <div className='track-tracks'>
         {tracks.map((track, index) => (
-          <TrackSong
+          <Track
             audioRef={audioRef}
             key={track.id}
             track={track}
