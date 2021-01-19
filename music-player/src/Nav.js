@@ -4,7 +4,7 @@ const Nav = ({ setShowTracks, showTracks }) => {
   return (
     <div>
       <nav>
-        <h1>Waves</h1>
+        <h1>Music Player</h1>
         <button
           onClick={() => {
             setShowTracks(!showTracks);
