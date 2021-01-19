@@ -33,6 +33,14 @@ const App = () => {
     });
   };
 
+  const trackEndHandler = async () => {
+    let index = tracks.findIndex((track) => (
+      track.id === currentTrack.id
+    ))
+    await setCurrentTrack(tracks[(index + 1) % tracks.length])
+
+  }
+
   return (
     <div className='App'>
       <Nav showTracks={showTracks} setShowTracks={setShowTracks} />
@@ -62,6 +70,7 @@ const App = () => {
         src={currentTrack.audio}
         //updates the current song duration on load
         onLoadedMetadata={updateTrack}
+        onEnded={trackEndHandler}
       />
     </div>
   );

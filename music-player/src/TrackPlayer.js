@@ -49,18 +49,21 @@ const TrackPlayer = ({
     }
   };
 
-  const trackHandler = (type) => {
+  const trackHandler = async (type) => {
     let index = tracks.findIndex((track) => (
       track.id === currentTrack.id
     ))
     if (type === "next") {
-      setCurrentTrack(tracks[(index + 1) % tracks.length])
+      await setCurrentTrack(tracks[(index + 1) % tracks.length])
     } else if (type === "previous"){
       if ((index - 1) % tracks.length === -1) {
         setCurrentTrack(tracks[tracks.length - 1])
       } else {
         setCurrentTrack(tracks[(index - 1) % tracks.length])
       }
+    }
+    if(isPlaying) {
+      audioRef.current.play()
     }
   }
 
