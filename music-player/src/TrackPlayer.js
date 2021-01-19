@@ -7,8 +7,9 @@ const TrackPlayer = ({
   setCurrentTrack,
   isPlaying,
   audioRef,
-  setSongInfo,
-  songInfo,
+  setTrackInfo,
+  trackInfo,
+  sliderAmount
 }) => {
   const formatTrackTime = (time) => {
     return (
@@ -32,8 +33,8 @@ const TrackPlayer = ({
 
   const changeTrack = (event) => {
     audioRef.current.currentTime = event.target.value;
-    setSongInfo({
-      ...songInfo,
+    setTrackInfo({
+      ...trackInfo,
       current: event.target.value,
     });
   };
@@ -63,21 +64,29 @@ const TrackPlayer = ({
     }
   }
 
+  const sliderAnimation = {
+    transform: `translateX(${trackInfo.sliderPercent}%)`
+  }
+
+  const slidedGradientAnimation = {
+    background: `linear-gradient(to right, ${currentTrack.color[0]}, ${currentTrack.color[1]})`
+  }
+
   return (
     <div className='player'>
       <div className='controls'>
-        <p>{formatTrackTime(songInfo.current)}</p>
-        <div className='track'>
+        <p>{formatTrackTime(trackInfo.current)}</p>
+        <div style={slidedGradientAnimation} className='track'>
           <input
             onChange={changeTrack}
             min={0}
-            max={songInfo.duration || 0}
-            value={songInfo.current}
+            max={trackInfo.duration || 0}
+            value={trackInfo.current}
             type='range'
           />
-          <div className='track-animation' />
+          <div style={sliderAnimation} className='track-animation' />
         </div>
-        <p>{formatTrackTime(songInfo.duration || "")}</p>
+        <p>{formatTrackTime(trackInfo.duration || "")}</p>
       </div>
       <div className='player-buttons'>
         <i onClick={() => trackHandler("previous")} className='fas fa-angle-left previous' />

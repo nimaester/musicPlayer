@@ -39,7 +39,6 @@ input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   height: 16px;
   width: 16px;
-  background: black;
   border-radius: 50px;
 }
 
@@ -57,7 +56,6 @@ input[type="range"]::-webkit-slider-thumb {
   background: grey;
   width: 100%;
   height: 100%;
-  border-radius: 50px;
   position: absolute;
   top: 0;
   left: 0;

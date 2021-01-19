@@ -10,7 +10,7 @@ const App = () => {
   const [tracks, setTracks] = useState(Tracks());
   const [currentTrack, setCurrentTrack] = useState(tracks[0]);
   const [isPlaying, setPlaying] = useState(false);
-  const [songInfo, setSongInfo] = useState({
+  const [trackInfo, setTrackInfo] = useState({
     current: 0,
     duration: 0,
     sliderPercent: 0,
@@ -25,8 +25,8 @@ const App = () => {
     const currentRounded = Math.round(current);
     const durationRounded = Math.round(duration);
     const sliderAmount = Math.round((currentRounded / durationRounded) * 100);
-    setSongInfo({
-      ...songInfo,
+    setTrackInfo({
+      ...trackInfo,
       current,
       duration,
       sliderPercent: sliderAmount,
@@ -44,8 +44,8 @@ const App = () => {
         currentTrack={currentTrack}
         setCurrentTrack={setCurrentTrack}
         audioRef={audioRef}
-        songInfo={songInfo}
-        setSongInfo={setSongInfo}
+        trackInfo={trackInfo}
+        setTrackInfo={setTrackInfo}
       />
       <TrackList
         audioRef={audioRef}
