@@ -61,7 +61,39 @@ const Tracks = () => {
       active: false,
       color: ["#57507C", "#191514"],
       audio: "https://mp3.chillhop.com/serve.php/?mp3=10136",
-    }
+    },
+    {
+      title: "Persist",
+      artist: "Invention_",
+      image_cover:
+        "https://chillhop.com/wp-content/uploads/2020/05/16bcbe48680098798af04f176daae3693839238d-300x300.jpg",
+      id: uuidv4(),
+      active: false,
+      color: ["#E497AD", "#45598E"],
+      audio: "https://mp3.chillhop.com/serve.php/?mp3=8291",
+    },
+    {
+      title: "Maple Leaf PT.2",
+      artist: "Philanthrope",
+      image_cover:
+        "https://chillhop.com/wp-content/uploads/2020/09/2899f7cc22ab12e17d0119819aac3ca9dbab46e6-300x300.jpg",
+      id: uuidv4(),
+      active: false,
+      color: ["#CB433F", "#5B3825"],
+      audio: "https://mp3.chillhop.com/serve.php/?mp3=10263",
+    },
+    {
+      title: "Yesterday",
+      artist: "Mo Anando",
+      image_cover:
+        "https://chillhop.com/wp-content/uploads/2020/07/b6e48e6cfb2a90723b9cf1b108a6d305f9204eb4-300x300.jpg",
+      id: uuidv4(),
+      active: false,
+      color: ["#CB433F", "#5B3825"],
+      audio: "https://mp3.chillhop.com/serve.php/?mp3=9281",
+    },
+
+
   ];
 };
 
