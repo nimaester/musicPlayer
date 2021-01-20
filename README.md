@@ -23,6 +23,6 @@ This application was built using React and SCSS.
 
 I build this simple app to practice my React skills. Theres not a lot of tracks but it gets the job done. This app has functionality of a typical music player and responds to page resizing. If you want to try it out is is deployed on netlify at:
 
-[https://ntmplayer.netlify.app/](https://ntmplayer.netlify.app/).
+[https://ntmplayer.netlify.app/](https://ntmplayer.netlify.app/)
 
 
