@@ -32,6 +32,7 @@
   display: flex;
   align-items: center;
   padding: 1rem 2rem 1rem 2rem;
+  transition: background 0.3 ease;
   img {
     width: 30%;
   }
@@ -62,12 +63,17 @@
 .active {
   transform: translateX(0);
   opacity: 1;
+  button {
+    background: rgb(78, 255, 226);
+  }
 }
 
 @media screen and (max-width: 760px) {
   .active {
     width: 100%;
-    height: 100%;
+  }
+  button {
+    background: rgb(78, 255, 226);
   }
 
 }

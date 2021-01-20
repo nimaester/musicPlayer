@@ -16,9 +16,14 @@ nav {
   }
 }
 
+.highlight {
+  background: rgb(78, 255, 226);
+}
+
 @media screen and (max-width: 760px) {
   nav {
-    height: 100%;
-    width: 100%;
+    button {
+      z-index: 10;
+    }
   }
 }

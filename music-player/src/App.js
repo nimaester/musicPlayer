@@ -42,7 +42,7 @@ const App = () => {
   }
 
   return (
-    <div className='App'>
+    <div className={`main ${showTracks ? 'track-list-open' : ''}`}>
       <Nav showTracks={showTracks} setShowTracks={setShowTracks} />
       <TrackInfo currentTrack={currentTrack} />
       <TrackPlayer
