@@ -64,10 +64,9 @@
   opacity: 1;
 }
 
-// @media screen and (max-width: 760px) {
-//   .active {
-//     height: 100%;
-//     width: 100%;
-//   }
+@media screen and (max-width: 760px) {
+  .active {
+    width: 100%;
+  }
 
-// }
+}
