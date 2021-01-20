@@ -92,13 +92,13 @@ const TrackPlayer = ({
         <p>{formatTrackTime(trackInfo.duration || "")}</p>
       </div>
       <div className='player-buttons'>
-        <i onClick={() => trackHandler("previous")} className='fas fa-angle-left previous' />
+        <i onClick={() => trackHandler("previous")} className='fas fa-angle-left fa-2x previous' />
         {isPlaying ? (
-          <i onClick={playSong} className='fas fa-pause pause' />
+          <i onClick={playSong} className='fas fa-pause fa-lg pause' />
         ) : (
-          <i onClick={playSong} className='fas fa-play play' />
+          <i onClick={playSong} className='fas fa-play fa-lg play' />
         )}
-        <i onClick={() => trackHandler("next")} className='fas fa-angle-right next' />
+        <i onClick={() => trackHandler("next")} className='fas fa-angle-right fa-2x next' />
       </div>
     </div>
   );

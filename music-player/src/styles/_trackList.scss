@@ -37,7 +37,7 @@
   }
   cursor: pointer;
   &:hover {
-    background: rgb(212, 209, 255);
+    background: rgb(193, 255, 242);
   }
 }
 
@@ -56,10 +56,18 @@
 }
 
 .selected {
-  background: rgb(147, 155, 255);
+  background: rgb(78, 255, 226);
 }
 
 .active {
   transform: translateX(0);
   opacity: 1;
 }
+
+// @media screen and (max-width: 760px) {
+//   .active {
+//     height: 100%;
+//     width: 100%;
+//   }
+
+// }

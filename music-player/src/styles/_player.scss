@@ -1,14 +1,15 @@
 .player {
-  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  min-height: 20vh;
 }
 
 .controls {
-  width: 50%;
+  width: 60%;
   display: flex;
+  align-items: center;
   input {
     width: 100%;
     // padding: 1rem 0;
@@ -19,13 +20,17 @@
 
 }
 
+p {
+  padding: 1vh;
+}
+
 .player-buttons {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-width: 100px;
+  // min-width: 100px;
   padding: 1rem;
-  width: 20%;
+  width: 40%;
   i {
     cursor: pointer;
   }
@@ -65,9 +70,12 @@ input[type="range"]::-webkit-slider-thumb {
 
 @media screen and (max-width: 760px) {
   .controls {
-    width: 90%;
+    width: 80%;
   }
   .player-buttons {
-    width: 60%;
+    width: 40%;
+  }
+  input {
+    width: 40%;
   }
 }
