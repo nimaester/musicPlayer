@@ -5,12 +5,13 @@
   align-items: center;
   justify-content: center;
   padding-left: 1rem 0;
+  margin-top: 20px;
   img {
-    max-width: 50%;
+    max-width: 30%;
     transition: all 2s ease;
   }
   h2 {
-    padding: 3rem 1rem 1rem 1rem;
+    padding: 2rem 1rem 1rem 1rem;
   }
   h4 {
     font-size: medium ;
@@ -19,19 +20,6 @@
 
 @media screen and (max-width: 760px) {
   img {
-    width: 60%;
+    width: 50%;
   }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.rotateSong {
-  animation: rotate 20s linear forwards infinite;
 }
