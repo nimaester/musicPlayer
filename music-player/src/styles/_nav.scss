@@ -11,19 +11,19 @@ nav {
     transition: all 0.3s ease;
     border: 1px solid black;
     &:hover {
-      background: rgb(78, 255, 226);
+      background: #32e0c4;
     }
   }
 }
 
 .highlight {
-  background: rgb(78, 255, 226);
+  background: #32e0c4;
 }
 
 @media screen and (max-width: 760px) {
   nav {
-    button {
-      z-index: 3;
-    }
+    // button {
+    //   z-index: 3;
+    // }
   }
 }

@@ -72,7 +72,8 @@ const TrackPlayer = ({
   }
 
   const slidedGradientAnimation = {
-    background: `linear-gradient(to right, ${currentTrack.color[0]}, ${currentTrack.color[1]})`
+    // background: `linear-gradient(to right, ${currentTrack.color[0]}, ${currentTrack.color[1]})`
+    background: '#32e0c4'
   }
 
   return (
