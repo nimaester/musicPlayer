@@ -38,11 +38,10 @@ const App = () => {
       track.id === currentTrack.id
     ))
     await setCurrentTrack(tracks[(index + 1) % tracks.length])
-
   }
 
   return (
-    <div className={`main ${showTracks ? 'track-list-open' : 'overlay'}`}>
+    <div className={`main ${showTracks ? 'track-list-open' : ''}`}>
       <Nav showTracks={showTracks} setShowTracks={setShowTracks} />
       <TrackInfo currentTrack={currentTrack} />
       <TrackPlayer
@@ -63,6 +62,7 @@ const App = () => {
         setCurrentTrack={setCurrentTrack}
         setTracks={setTracks}
         showTracks={showTracks}
+        setShowTracks={setShowTracks}
       />
       <audio
         onTimeUpdate={updateTrack}

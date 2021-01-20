@@ -9,6 +9,7 @@ const TrackList = ({
   setCurrentTrack,
   setPlaying,
   audioRef,
+  setShowTracks
 }) => {
   return (
     <div className={`track-list ${showTracks ? "active" : ""}`}>
@@ -24,6 +25,7 @@ const TrackList = ({
             setPlaying={setPlaying}
             isPlaying={isPlaying}
             setTracks={setTracks}
+            setShowTracks={setShowTracks}
           />
         ))}
       </div>

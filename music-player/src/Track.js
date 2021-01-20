@@ -8,6 +8,7 @@ const Track = ({
   setCurrentTrack,
   setPlaying,
   audioRef,
+  setShowTracks
 }) => {
   const selectSong = (event) => {
     setCurrentTrack(track);
@@ -22,12 +23,15 @@ const Track = ({
           })
         : null;
     }
+    if (window.innerWidth < 760) {
+        setShowTracks(false);
+    }
   };
 
   return (
     <div
       onClick={selectSong}
-      className={`track-song ${track.active ? "selected" : ""}`}
+      className={`track-song ${track.active ? 'selected' : ''}`}
     >
       <img src={track.image_cover} alt='' />
       <div className='song-desc'>
