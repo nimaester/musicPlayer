@@ -92,8 +92,66 @@ const Tracks = () => {
       color: ["#CB433F", "#5B3825"],
       audio: "https://mp3.chillhop.com/serve.php/?mp3=9281",
     },
-
-
+    {
+      title: "Moon",
+      artist: "Monma",
+      image_cover:
+        "https://chillhop.com/wp-content/uploads/2020/07/b8792fcb926a79c2410b9bcd32837e206d474e32-300x300.jpg",
+      id: uuidv4(),
+      active: false,
+      color: ["#CB433F", "#5B3825"],
+      audio: "https://mp3.chillhop.com/serve.php/?mp3=9268",
+    },
+    {
+      title: "Small Town Palm Trees",
+      artist: "Mama Aiuto",
+      image_cover:
+        "https://chillhop.com/wp-content/uploads/2021/01/6b1bb8736ee3e972747bc11f312e31cf7f5823e4-300x300.jpg",
+      id: uuidv4(),
+      active: false,
+      color: ["#CB433F", "#5B3825"],
+      audio: "https://mp3.chillhop.com/serve.php/?mp3=12124",
+    },
+    {
+      title: "Aqueduct",
+      artist: "Leavv",
+      image_cover:
+        "https://chillhop.com/wp-content/uploads/2020/09/88e7eb711f8c71d87fc102e97cf91e36f692348d-300x300.jpg",
+      id: uuidv4(),
+      active: false,
+      color: ["#CB433F", "#5B3825"],
+      audio: "https://mp3.chillhop.com/serve.php/?mp3=9921",
+    },
+    {
+      title: "Inside",
+      artist: "Miscél",
+      image_cover:
+        "https://chillhop.com/wp-content/uploads/2020/07/edaf1202cf33c7a2a122b7494a7e4d3e643af45f-300x300.jpg",
+      id: uuidv4(),
+      active: false,
+      color: ["#CB433F", "#5B3825"],
+      audio: "https://mp3.chillhop.com/serve.php/?mp3=9322",
+    },
+    {
+      title: "Dusk",
+      artist: "Blue Wednesday, Soul Food Horns",
+      image_cover:
+        "https://chillhop.com/wp-content/uploads/2020/07/58028b4ad62050072228e4c833916e5512772399-300x300.jpg",
+      id: uuidv4(),
+      active: false,
+      color: ["#CB433F", "#5B3825"],
+      audio: "https://mp3.chillhop.com/serve.php/?mp3=8131",
+    },
+    {
+      title: "There and Back",
+      artist: "Shopan",
+      image_cover:
+        "https://chillhop.com/wp-content/uploads/2020/10/0e5bb63f838ff92eeac142aae944e9f678df13c9-300x300.jpg",
+      id: uuidv4(),
+      active: false,
+      color: ["#CB433F", "#5B3825"],
+      audio: "https://mp3.chillhop.com/serve.php/?mp3=10311",
+    },
   ];
 };
 
