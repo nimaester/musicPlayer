@@ -55,23 +55,25 @@ const App = () => {
 
   return (
     <div className={`main ${showTracks ? 'track-list-open' : ''}`}>
-      <Nav showTracks={showTracks} setShowTracks={setShowTracks} />
-      <TrackInfo currentTrack={currentTrack} />
-      <TrackPlayer
-        tracks={tracks}
-        isPlaying={isPlaying}
-        setPlaying={setPlaying}
-        currentTrack={currentTrack}
-        setCurrentTrack={setCurrentTrack}
-        audioRef={audioRef}
-        trackInfo={trackInfo}
-        setTrackInfo={setTrackInfo}
-        shuffle={shuffle}
-        setShuffle={setShuffle}
-        repeat={repeat}
-        setRepeat={setRepeat}
-        shuffleHandler={shuffleHandler}
-      />
+      <div className="bc">
+        <Nav showTracks={showTracks} setShowTracks={setShowTracks} />
+        <TrackInfo currentTrack={currentTrack} />
+        <TrackPlayer
+          tracks={tracks}
+          isPlaying={isPlaying}
+          setPlaying={setPlaying}
+          currentTrack={currentTrack}
+          setCurrentTrack={setCurrentTrack}
+          audioRef={audioRef}
+          trackInfo={trackInfo}
+          setTrackInfo={setTrackInfo}
+          shuffle={shuffle}
+          setShuffle={setShuffle}
+          repeat={repeat}
+          setRepeat={setRepeat}
+          shuffleHandler={shuffleHandler}
+        />
+      </div>
       <TrackList
         audioRef={audioRef}
         isPlaying={isPlaying}

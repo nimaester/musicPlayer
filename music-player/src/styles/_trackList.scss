@@ -24,15 +24,14 @@
   transform: translateX(-100%);
   transition: all 0.5s ease;
   opacity: 0;
-  padding: 20px 0;
-  transition: all 0.5s ease;
+  padding-top: 20px;
 }
 
 .track-song  {
   display: flex;
   align-items: center;
-  padding: 1rem 2rem 1rem 2rem;
-  transition: background 0.3 ease;
+  padding: 2rem 2rem 2rem 3rem;
+  transition: background 0.5 ease;
   img {
     width: 40%;
   }
@@ -40,12 +39,12 @@
   &:hover {
     background: rgb(193, 255, 242);
   }
-
   margin-top: 2px;
 }
 
 .title {
   padding: 1rem 2rem 1rem 2rem;
+  font-size: xx-large;
 }
 
 .song-desc {
@@ -68,7 +67,7 @@
   button {
     background: rgb(78, 255, 226);
   }
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
   background-color: #eeeeee;
 }
 
