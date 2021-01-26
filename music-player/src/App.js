@@ -35,11 +35,22 @@ const App = () => {
     });
   };
 
+  const shuffleHandler = () => {
+    return Math.floor(Math.random() * Math.floor(tracks.length))
+  }
+
   const trackEndHandler = async () => {
     let index = tracks.findIndex((track) => (
       track.id === currentTrack.id
     ))
-    await setCurrentTrack(tracks[(index + 1) % tracks.length])
+    if (repeat) {
+      audioRef.current.currentTime = 0;
+      audioRef.current.play();
+    } else if (shuffle) {
+      await setCurrentTrack(tracks[shuffleHandler()]);
+    } else {
+      await setCurrentTrack(tracks[(index + 1) % tracks.length])
+    }
   }
 
   return (
