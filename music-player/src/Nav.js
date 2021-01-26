@@ -4,13 +4,13 @@ const Nav = ({ setShowTracks, showTracks }) => {
   return (
     <div>
       <nav>
-        <h1>Music Player</h1>
+        <h1>Lo-Fi</h1>
         <button className={showTracks ? "highlight" : ""}
           onClick={() => {
             setShowTracks(!showTracks);
           }}
         >
-          LIBRARY
+          Track List {' '}
           <i className='fas fa-music'></i>
         </button>
       </nav>

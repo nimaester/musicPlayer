@@ -3,7 +3,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 0 50px;
+
   button {
     background: transparent;
     border: none;
@@ -20,11 +20,3 @@ nav {
 .highlight {
   background: #32e0c4;
 }
-
-// @media screen and (max-width: 760px) {
-//   nav {
-//     button {
-//       z-index: 3;
-//     }
-//   }
-// }

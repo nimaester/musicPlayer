@@ -25,6 +25,7 @@
   transition: all 0.5s ease;
   opacity: 0;
   padding: 20px 0;
+  transition: all 0.3s ease;
 }
 
 .track-song  {
@@ -65,6 +66,7 @@
   button {
     background: rgb(78, 255, 226);
   }
+  transition: all 0.3s ease;
 }
 
 .hidden {

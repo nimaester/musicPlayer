@@ -16,6 +16,8 @@ const App = () => {
     sliderPercent: 0,
   });
   const [showTracks, setShowTracks] = useState(false);
+  const [shuffle, setShuffle] = useState(false);
+  const [random, setRandom] = useState(false);
 
   const audioRef = useRef(null);
 

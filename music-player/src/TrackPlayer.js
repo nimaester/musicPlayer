@@ -93,6 +93,7 @@ const TrackPlayer = ({
         <p>{formatTrackTime(trackInfo.duration || "")}</p>
       </div>
       <div className='player-buttons'>
+        <i className="fas fa-random fa-lg shuffle"></i>
         <i onClick={() => trackHandler("previous")} className='fas fa-angle-left fa-2x previous' />
         {isPlaying ? (
           <i onClick={playSong} className='fas fa-pause fa-lg pause' />
@@ -100,6 +101,7 @@ const TrackPlayer = ({
           <i onClick={playSong} className='fas fa-play fa-lg play' />
         )}
         <i onClick={() => trackHandler("next")} className='fas fa-angle-right fa-2x next' />
+        <i className="fas fa-redo fa-lg repeat"></i>
       </div>
     </div>
   );
