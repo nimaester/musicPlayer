@@ -17,7 +17,7 @@ const App = () => {
   });
   const [showTracks, setShowTracks] = useState(false);
   const [shuffle, setShuffle] = useState(false);
-  const [random, setRandom] = useState(false);
+  const [repeat, setRepeat] = useState(false);
 
   const audioRef = useRef(null);
 
@@ -55,6 +55,10 @@ const App = () => {
         audioRef={audioRef}
         trackInfo={trackInfo}
         setTrackInfo={setTrackInfo}
+        shuffle={shuffle}
+        setShuffle={setShuffle}
+        repeat={repeat}
+        setRepeat={setRepeat}
       />
       <TrackList
         audioRef={audioRef}

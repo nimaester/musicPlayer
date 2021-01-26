@@ -9,8 +9,13 @@ const TrackPlayer = ({
   audioRef,
   setTrackInfo,
   trackInfo,
-  sliderAmount
+  sliderAmount,
+  setRepeat,
+  repeat,
+  shuffle,
+  setShuffle
 }) => {
+
   const formatTrackTime = (time) => {
     return (
       Math.floor(time / 60) + ":" + ("0" + Math.floor(time % 60)).slice(-2)
@@ -73,7 +78,19 @@ const TrackPlayer = ({
 
   const slidedGradientAnimation = {
     // background: `linear-gradient(to right, ${currentTrack.color[0]}, ${currentTrack.color[1]})`
-    background: '#32e0c4'
+    background: '#32E0C4'
+  }
+
+  const shuffleRepeat = {
+    color: '#32E0C4'
+  }
+
+  const handleShuffle = () => {
+    setShuffle(!shuffle)
+  }
+
+  const handleRepeat = () => {
+    setRepeat(!repeat)
   }
 
   return (
@@ -93,7 +110,7 @@ const TrackPlayer = ({
         <p>{formatTrackTime(trackInfo.duration || "")}</p>
       </div>
       <div className='player-buttons'>
-        <i className="fas fa-random fa-lg shuffle"></i>
+        <i onClick={handleShuffle} style={shuffle ? shuffleRepeat : null} className="fas fa-random fa-lg shuffle"></i>
         <i onClick={() => trackHandler("previous")} className='fas fa-angle-left fa-2x previous' />
         {isPlaying ? (
           <i onClick={playSong} className='fas fa-pause fa-lg pause' />
@@ -101,7 +118,7 @@ const TrackPlayer = ({
           <i onClick={playSong} className='fas fa-play fa-lg play' />
         )}
         <i onClick={() => trackHandler("next")} className='fas fa-angle-right fa-2x next' />
-        <i className="fas fa-redo fa-lg repeat"></i>
+        <i onClick={handleRepeat} style={repeat ? shuffleRepeat : null} className="fas fa-redo fa-lg repeat"></i>
       </div>
     </div>
   );
