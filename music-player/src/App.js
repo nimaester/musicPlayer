@@ -70,6 +70,7 @@ const App = () => {
         setShuffle={setShuffle}
         repeat={repeat}
         setRepeat={setRepeat}
+        shuffleHandler={shuffleHandler}
       />
       <TrackList
         audioRef={audioRef}

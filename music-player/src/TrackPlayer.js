@@ -13,7 +13,8 @@ const TrackPlayer = ({
   setRepeat,
   repeat,
   shuffle,
-  setShuffle
+  setShuffle,
+  shuffleHandler
 }) => {
 
   const formatTrackTime = (time) => {
@@ -59,9 +60,15 @@ const TrackPlayer = ({
       track.id === currentTrack.id
     ))
     if (type === "next") {
-      await setCurrentTrack(tracks[(index + 1) % tracks.length])
+      if (shuffle) {
+        await setCurrentTrack(tracks[shuffleHandler()]);
+      } else {
+        await setCurrentTrack(tracks[(index + 1) % tracks.length])
+      }
     } else if (type === "previous"){
-      if ((index - 1) % tracks.length === -1) {
+      if (shuffle) {
+        await setCurrentTrack(tracks[shuffleHandler()]);
+      } else if ((index - 1) % tracks.length === -1 && !shuffle) {
         setCurrentTrack(tracks[tracks.length - 1])
       } else {
         setCurrentTrack(tracks[(index - 1) % tracks.length])
