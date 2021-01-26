@@ -22,7 +22,6 @@
   box-shadow: 2px 2px 50px gray;
   overflow: scroll;
   transform: translateX(-100%);
-  transition: all 0.5s ease;
   opacity: 0;
   padding-top: 20px;
 }
@@ -67,7 +66,6 @@
   button {
     background: rgb(78, 255, 226);
   }
-  transition: all 0.5s ease;
   background-color: #eeeeee;
 }
 

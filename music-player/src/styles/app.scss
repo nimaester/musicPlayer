@@ -5,6 +5,7 @@
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   color: #212121;
+  transition: all 0.5s ease;
 }
 
 *::-webkit-scrollbar {
@@ -16,10 +17,10 @@ html {
   background: linear-gradient(#eeeeee, #eb5e0b);
 }
 
+
 .track-list-open {
   .song-container, .player, nav{
     padding-left: 28%;
-    transition: all 0.5s ease;
   }
 }
 
