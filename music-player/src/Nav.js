@@ -4,7 +4,7 @@ const Nav = ({ setShowTracks, showTracks }) => {
   return (
     <div>
       <nav>
-        <h1>Lo-Fi</h1>
+        <h1>Lo-Fi Station</h1>
         <button className={showTracks ? "highlight" : ""}
           onClick={() => {
             setShowTracks(!showTracks);
