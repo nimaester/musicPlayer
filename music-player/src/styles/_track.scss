@@ -5,11 +5,13 @@
   align-items: center;
   justify-content: center;
   margin-top: 30px;
+  transition: all 0.5s ease;
   img {
     width: 20rem;
   }
   h2 {
     padding: 2rem 1rem 1rem 1rem;
+    transition: all 1s ease;
   }
   h4 {
     font-size: medium ;
@@ -25,7 +27,7 @@
 
 
 .dot-flashing {
-  margin: 15px 0 0 -30px;
+  margin: 15px 0 0 -28px;
   position: absolute;
   width: 8px;
   height: 8px;

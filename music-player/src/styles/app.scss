@@ -1,11 +1,10 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   color: #212121;
-  transition: all 0.3s ease;
 }
 
 *::-webkit-scrollbar {
@@ -22,6 +21,7 @@ html {
   .song-container, .player, nav{
     padding-left: 28%;
   }
+  transition: all 0.3s ease;
 }
 
 

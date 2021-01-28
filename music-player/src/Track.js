@@ -38,7 +38,7 @@ const Track = ({
         <h2>{track.title}</h2>
         <h4>{track.artist}</h4>
       </div>
-      <p className={`${track.active ? 'dot-flashing' : ''}`}/>
+      <p className={`${isPlaying && track.active ? 'dot-flashing' : ''}`}/>
     </div>
   );
 };
