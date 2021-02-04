@@ -37,12 +37,11 @@
   }
   cursor: pointer;
   &:hover {
-    background: rgb(193, 255, 242);
+    background:  #0fa0a5;
     h4, h2 {
       color: black;
     }
   }
-  margin-top: 2px;
 }
 
 .title {
@@ -64,7 +63,7 @@
 }
 
 .selected {
-  background: rgb(78, 255, 226);
+  background: #0d7377;
   h4, h2{
     color: black;
   }
@@ -74,7 +73,7 @@
   transform: translateX(0);
   opacity: 1;
   button {
-    background: rgb(78, 255, 226);
+    background:  #0d7377;
   }
   background-color: #212121;
   color:black
