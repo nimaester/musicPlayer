@@ -75,6 +75,7 @@ input[type="range"]::-moz-range-thumb {
   pointer-events: none;
 }
 
+
 @media screen and (max-width: 760px) {
   .controls {
     width: 23rem;
@@ -84,5 +85,17 @@ input[type="range"]::-moz-range-thumb {
   }
   input {
     width: 40%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .controls {
+    width: 18rem;
+  }
+  .player-buttons {
+    width: 16rem;
+  }
+  input {
+    width: 35%;
   }
 }

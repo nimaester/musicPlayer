@@ -82,5 +82,10 @@
   button {
     background: rgb(78, 255, 226);
   }
-
 }
+@media screen and (max-width: 420px) {
+  .active {
+    width: 100%;
+  }
+}
+
