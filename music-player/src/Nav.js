@@ -11,7 +11,7 @@ const Nav = ({ setShowTracks, showTracks }) => {
           }}
         >
           Track List {' '}
-          <i className='fas fa-music'></i>
+          <i className={'fas fa-music ' + `${showTracks ? "highlight" : ""}`}></i>
         </button>
       </nav>
     </div>
@@ -19,3 +19,5 @@ const Nav = ({ setShowTracks, showTracks }) => {
 };
 
 export default Nav;
+
+// {`fas fa-music ${`showTracks ? "highlight" : ""}`}

@@ -15,13 +15,22 @@ nav {
     padding: 0.5rem;
     border: 1px solid black;
     &:hover {
-      background: #32e0c4;
+      background: #0d7377;
+      color: black
     }
   }
 }
 
+.fa-music {
+  color: white;
+}
+
 .highlight {
-  background: #32e0c4;
+  background: #0d7377;
+}
+
+.fa-music highlight {
+  color: black;
 }
 
 @media screen and (max-width: 420px) {

@@ -85,11 +85,11 @@ const TrackPlayer = ({
 
   const slidedGradientAnimation = {
     // background: `linear-gradient(to right, ${currentTrack.color[0]}, ${currentTrack.color[1]})`
-    background: '#32E0C4'
+    background: '#0d7377'
   }
 
   const shuffleRepeat = {
-    color: '#32E0C4'
+    color: '#0d7377'
   }
 
   const handleShuffle = () => {

@@ -38,27 +38,36 @@
   cursor: pointer;
   &:hover {
     background: rgb(193, 255, 242);
+    h4, h2 {
+      color: black;
+    }
   }
   margin-top: 2px;
 }
 
 .title {
   padding: 1rem 2rem 1rem 2rem;
-  font-size: xx-large;
+  font-size: large;
+  color: white;
 }
 
 .song-desc {
   padding-left: 1rem;
   h4 {
     font-size: 0.7rem;
+    color: white;
   }
   h2 {
     font-size: 1rem;
+    color: white;
   }
 }
 
 .selected {
   background: rgb(78, 255, 226);
+  h4, h2{
+    color: black;
+  }
 }
 
 .active {
@@ -67,7 +76,8 @@
   button {
     background: rgb(78, 255, 226);
   }
-  background-color: #eeeeee;
+  background-color: #212121;
+  color:black
 }
 
 .hidden {
@@ -80,7 +90,7 @@
     width: 100%;
   }
   button {
-    background: rgb(78, 255, 226);
+    background: #0d7377;
   }
 }
 @media screen and (max-width: 420px) {
