@@ -9,11 +9,12 @@ const TrackList = ({
   setCurrentTrack,
   setPlaying,
   audioRef,
-  setShowTracks
+  setShowTracks,
 }) => {
   return (
     <div className={`track-list ${showTracks ? "active" : ""}`}>
-      <h2 className='title'>Track List</h2>
+      <span className='title'>Track List</span>
+
       <div className='track-tracks'>
         {tracks.map((track, index) => (
           <Track

@@ -33,7 +33,6 @@ const Track = ({
       onClick={selectSong}
       className={`track-song ${track.active ? 'selected ' : ''}`}
     >
-      <img src={track.artwork} alt='' />
       <div className='song-desc'>
         <h2>{track.title}</h2>
         <h4>{track.artist}</h4>

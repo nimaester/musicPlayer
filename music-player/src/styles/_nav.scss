@@ -17,22 +17,24 @@ nav {
     outline: none;
     &:hover {
       background: #0d7377;
-      color: black
+      color: black;
+      .fa-music {
+        color: black;
+      }
     }
+    .fa-music {
+      color: white;
+    }
+  }
+  .highlight {
+    background: #0d7377;
+  }
+  img {
+    width: 3rem;
   }
 }
 
-.fa-music {
-  color: white;
-}
 
-.highlight {
-  background: #0d7377;
-}
-
-.fa-music highlight {
-  color: black;
-}
 
 @media screen and (max-width: 420px) {
   nav {
