@@ -25,8 +25,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0.8rem;
   width: 40%;
+  border: 2px solid #0fa0a5;
+  border-radius: 50px;
+  background: gray;
   i {
     cursor: pointer;
   }
@@ -78,24 +81,15 @@ input[type="range"]::-moz-range-thumb {
 
 @media screen and (max-width: 760px) {
   .controls {
-    width: 23rem;
+    width: 80vw;
   }
   .player-buttons {
-    width: 17rem;
-  }
-  input {
-    width: 40%;
+    width: 80vw;
   }
 }
 
 @media screen and (max-width: 420px) {
-  .controls {
-    width: 18rem;
-  }
   .player-buttons {
-    width: 16rem;
-  }
-  input {
-    width: 35%;
+    margin-top: 1rem;
   }
 }

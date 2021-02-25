@@ -11,7 +11,6 @@ const Nav = ({ setShowTracks, showTracks }) => {
           }}
         >
           Track List {' '}
-          <i className={'fas fa-music ' + `${showTracks ? "highlight" : ""}`}></i>
         </button>
       </nav>
     </div>

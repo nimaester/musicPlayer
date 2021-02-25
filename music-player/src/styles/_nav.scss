@@ -9,10 +9,12 @@ nav {
   }
   button {
     font-size: large;
-    background: transparent;
+    background: gray;
+    border-radius: 50px;
+
     border: none;
     cursor: pointer;
-    padding: 0.5rem;
+    padding: 1rem;
     border: 1px solid black;
     outline: none;
     &:hover {

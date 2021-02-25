@@ -7,7 +7,7 @@
   margin-top: 30px;
   transition: all 0.5s ease;
   img {
-    width: 20rem;
+    width: 18rem;
   }
   h2 {
     padding: 2rem 1rem 1rem 1rem;
@@ -15,24 +15,6 @@
   }
   h4 {
     font-size: medium ;
-  }
-}
-
-
-@media screen and (max-width: 760px) {
-  .song-container {
-    img {
-      width: 20rem;
-    }
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .song-container {
-    img {
-      width: 13rem;
-    }
-    margin-top: -5px;
   }
 }
 
@@ -84,5 +66,29 @@
   50%,
   100% {
     background-color: #ebe6ff;
+  }
+}
+
+
+@media screen and (max-width: 760px) {
+  .song-container {
+    img {
+      width: 20rem;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .song-container {
+    img {
+      width: 12rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+    }
+    h4 {
+      font-size: 1rem;
+    }
+    margin-top: -1rem;
   }
 }
