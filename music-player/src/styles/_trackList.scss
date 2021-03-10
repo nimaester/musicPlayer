@@ -13,9 +13,8 @@
 }
 
 .track-list {
-  position: fixed;
+  position: absolute;
   top: 0;
-  left: 0;
   width: 20rem;
   height: 100%;
   background-color: white;
@@ -27,15 +26,16 @@
   transition: all 0.5s ease;
 }
 
-.track-song  {
+.track-song {
   display: flex;
   align-items: center;
   padding: 2rem 2rem 2rem 3rem;
   transition: background 0.5 ease;
   cursor: pointer;
   &:hover {
-    background:  #0fa0a5;
-    h4, h2 {
+    background: #0fa0a5;
+    h4,
+    h2 {
       color: black;
     }
   }
@@ -61,7 +61,8 @@
 
 .selected {
   background: #0d7377;
-  h4, h2{
+  h4,
+  h2 {
     color: black;
   }
 }
@@ -70,10 +71,10 @@
   transform: translateX(0);
   opacity: 1;
   button {
-    background:  #0d7377;
+    background: #0d7377;
   }
   background-color: #212121;
-  color:black
+  color: black;
 }
 
 .hidden {
@@ -94,4 +95,3 @@
     width: 100%;
   }
 }
-

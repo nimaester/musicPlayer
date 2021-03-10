@@ -1,17 +1,18 @@
 .player {
   display: flex;
+  min-height: 30vh;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  min-height: 18vh;
-  margin-top: 20px;
+  justify-content: center;
   transition: all 0.5s ease;
 }
 
 .controls {
-  width: 50%;
+  width: 80%;
+  max-width: 650px;
   display: flex;
   align-items: center;
+  margin: 0rem auto 3rem auto;
   input {
     width: 100%;
     -webkit-appearance: none;
@@ -25,8 +26,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.8rem;
-  width: 40%;
+  padding: 0.8rem 2rem;
+  width: 80%;
+  max-width: 650px;
   border: 2px solid #0fa0a5;
   border-radius: 50px;
   background: gray;
@@ -78,18 +80,19 @@ input[type="range"]::-moz-range-thumb {
   pointer-events: none;
 }
 
-
-@media screen and (max-width: 760px) {
-  .controls {
-    width: 80vw;
-  }
-  .player-buttons {
-    width: 80vw;
-  }
-}
-
 @media screen and (max-width: 420px) {
-  .player-buttons {
+  .player {
     margin-top: 1rem;
+    min-height: 20vh;
+  }
+  .player-buttons,
+  .controls {
+    width: 90%;
+  }
+  .player-buttons {
+    padding: 0.5rem 1rem;
+  }
+  .controls {
+    margin: 0rem auto 1rem auto;
   }
 }

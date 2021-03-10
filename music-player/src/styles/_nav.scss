@@ -1,9 +1,18 @@
 nav {
-  min-height: 10vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   transition: all 0.5s ease;
+
+  .header {
+    width: 80%;
+    min-height: 10vh;
+    display: flex;
+    max-width: 680px;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+  }
   h1 {
     font-size: xx-large;
   }
@@ -36,15 +45,14 @@ nav {
   }
 }
 
-
-
 @media screen and (max-width: 420px) {
   nav {
-    h1 {
-      font-size: large;
+    .header {
+      width: 90%;
+      margin-bottom: 2rem;
     }
     button {
-      font-size: small;
+      padding: 0.8rem;
     }
   }
 }
