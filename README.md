@@ -18,5 +18,14 @@ Run npm start
 <br>
 <br>
 
+# Tech used
+
+-Javascript<br>
+-React/Hooks<br>
+-SASS<br>
+-HTML<br>
+-Netlify<br>
+<br><br>
+
 
 ![Screen Shot 2021-04-13 at 11 50 53 PM](https://user-images.githubusercontent.com/59195400/114666600-4c699900-9cb3-11eb-9dd8-d3de238b56a2.png)
