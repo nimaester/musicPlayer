@@ -1,0 +1,58 @@
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+
+  .header {
+    width: 80%;
+    min-height: 10vh;
+    display: flex;
+    max-width: 680px;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+  }
+  h1 {
+    font-size: xx-large;
+  }
+  button {
+    font-size: large;
+    background: gray;
+    border-radius: 50px;
+
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    border: 1px solid black;
+    outline: none;
+    &:hover {
+      background: #0d7377;
+      color: black;
+      .fa-music {
+        color: black;
+      }
+    }
+    .fa-music {
+      color: white;
+    }
+  }
+  .highlight {
+    background: #0d7377;
+  }
+  img {
+    width: 3rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  nav {
+    .header {
+      width: 90%;
+      margin-bottom: 2rem;
+    }
+    button {
+      padding: 0.8rem;
+    }
+  }
+}

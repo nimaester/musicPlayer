@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: white;
+}
+
+*::-webkit-scrollbar {
+  height: 1px;
+}
+
+html {
+  height: 100%;
+  background: #212121;
+}
+
+
+.track-list-open {
+  .song-container, .player, nav{
+    padding-left: 28%;
+  }
+  transition: all 0.3s ease;
+}
+
+
+// @media screen and (min-width: 1500px) {
+//   .song-container, .player{
+//     padding-left: 25%;
+//     padding-right: 25%;
+//     transition: all 0.5s ease;
+//   }
+// }
+
+@import "./track";
+@import "./player";
+@import "./trackList";
+@import "./nav";

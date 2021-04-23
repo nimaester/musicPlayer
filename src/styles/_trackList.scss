@@ -1,0 +1,97 @@
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.5);
+  border-radius: 20px;
+  border: transparent;
+}
+
+.track-list {
+  position: absolute;
+  top: 0;
+  width: 20rem;
+  height: 100%;
+  background-color: white;
+  box-shadow: 2px 2px 50px gray;
+  overflow: scroll;
+  transform: translateX(-100%);
+  opacity: 0;
+  padding-top: 20px;
+  transition: all 0.5s ease;
+}
+
+.track-song {
+  display: flex;
+  align-items: center;
+  padding: 2rem 2rem 2rem 3rem;
+  transition: background 0.5 ease;
+  cursor: pointer;
+  &:hover {
+    background: #0fa0a5;
+    h4,
+    h2 {
+      color: black;
+    }
+  }
+}
+
+.title {
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: xx-large;
+  color: #0fa0a5;
+}
+
+.song-desc {
+  padding-left: 1rem;
+  h4 {
+    font-size: 1rem;
+    color: white;
+  }
+  h2 {
+    font-size: 1.1rem;
+    color: white;
+  }
+}
+
+.selected {
+  background: #0d7377;
+  h4,
+  h2 {
+    color: black;
+  }
+}
+
+.active {
+  transform: translateX(0);
+  opacity: 1;
+  button {
+    background: #0d7377;
+  }
+  background-color: #212121;
+  color: black;
+}
+
+.hidden {
+  transform: translateX(-100%);
+  opacity: 1;
+}
+
+@media screen and (max-width: 760px) {
+  .active {
+    width: 100%;
+  }
+  button {
+    background: #0d7377;
+  }
+}
+@media screen and (max-width: 420px) {
+  .active {
+    width: 100%;
+  }
+}
